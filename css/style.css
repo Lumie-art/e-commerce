@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Pacifico&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Asap", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: left;
+  background-color: #fff;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.header {
+  height: 100%;
+}
+
+.banner {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.banner .banner-bg {
+  object-fit: cover;
+  object-position: 50% 1%;
+}
+
+.banner-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  z-index: 5;
+}
+.banner-content__left p {
+  font-size: 1.1rem;
+}
+
+.banner-content__right {
+  width: 50%;
+  text-align: center;
+  font-size: 5.5rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.banner-content__left {
+  width: 60%;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  font-family: "Asap", sans-serif;
+}
+
+.section-4 {
+  flex-direction: row;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.section-4 .section-image-wrapper {
+  margin: 1rem;
+}
+
+.section.section-4 .img-desc {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  /* align-self: flex-start; */
+  padding: 2rem 1rem;
+  font-size: 1.1rem;
+}
+
+.section.section-4 .img-desc p {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  color: #e08e90;
+  font-family: "Pacifico", cursive;
+}
+
+.section-5 {
+  padding: 1rem 2rem;
+  background-color: #d9b1b2;
+  justify-content: center;
+  align-items: center;
+}
+.section-5 .section-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Pacifico", cursive;
+  padding: 1rem;
+  text-align: center;
+}
+
+.section-5 .image-row {
+  flex-direction: row;
+  padding: 2rem;
+}
+
+.section-5 i {
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 1rem;
+}
+.section-5 .image-row img {
+  width: 24.5%;
+  height: 320px;
+}
+
+.section-6 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.section-6 .segment {
+  width: 225px;
+  height: 350px;
+  margin: 1rem;
+  position: relative;
+}
+
+.section-6 .segment:last-of-type {
+  width: 45%;
+  padding: 2rem;
+}
+
+.segment .segment-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+}
+.segment .price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.segment .description {
+  font-size: 1.2rem;
+}
+.segment button {
+  width: 120px;
+  padding: 1rem;
+}
+.section-6 .segment img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.section.section-4 .section-image-wrapper .section-img {
+  width: 400px;
+}
+
+.section-3 {
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: #d9b1b2;
+  color: #ffffff;
+}
+
+.section-3 .section-header {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.section-3 .description {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.input-fields {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-fields input,
+button {
+  height: 35px;
+  width: 14%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  text-align: center;
+  line-height: 0rem;
+  box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%),
+    0 0.9375rem 1.40625rem rgb(4 9 20 / 3%),
+    0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+}
+
+.input-fields button,
+.segment button {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.section-3 .header {
+  height: 36px;
+}
+.section-1 {
+  height: 450px;
+  background-color: #d9b1b2;
+  padding: 4rem;
+}
+
+.section .section-main-text {
+  font-size: 1.7rem;
+  color: #ffffff;
+  line-height: 3.5rem;
+}
+
+.section-main-text__under {
+  width: 45%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.section.section-2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section.section-2 img {
+  width: 33.33%;
+}
+.section-7 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.section-7 .last-img {
+  width: 50%;
+}
+.section-7 .last-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.section-7 .section-7__wrapper {
+  width: 50%;
+}
