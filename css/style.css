@@ -54,6 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  margin-top:auto;
   z-index: 5;
 }
 .banner-content__left p {
